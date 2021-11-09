@@ -1,13 +1,17 @@
-IOTAIT WEB React
+#IOTAIT_WEB React
 
 To run this app do the following step:
+
 npm install
+
 npm run server
-it will open at http://localhost:3000
+
+It will open at http://localhost:3000
 
 Note: if you dont have react install u have to install react first
 
-if you clone this project from git. Then you have to follow some step so you can install full project easly
+If you clone this project from git. Then you have to follow some step so you can install full project easly
+
 Setp 1 :
 
 npm install
