@@ -18,6 +18,8 @@ edit the .env file for your api intregration
 
 some note about .env file there are some kinds of link
 
+edit test.env file to .env then follow below instruction:
+
 REACT_APP_BASE_URL -- this is the basic react url where you wana deploy your react project. Put you react hosting details it will setup up auto into your project.(Example: http://localhost:3000/)
 
 REACT_APP_BASE_API_URL -- this is the basic laravel project base URL it will be used as a API base url .(Example: http://127.0.0.1:8000/iota-admin/)
