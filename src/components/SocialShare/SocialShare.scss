@@ -1,0 +1,40 @@
+@import "../../sass/responsive";
+.social-share-wrapper {
+  // width: 150px;
+  color: #fff;
+  margin-right: 10px;
+  display: flex;
+  height: 40px;
+  padding: 5px 10px;
+  @include media("<=tablet") {
+    padding: 7px;
+  }
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px 1px #ddd;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.social-media-icon {
+  height: 25px;
+  width: 45px;
+  @include media("<=tablet") {
+    width: 30px;
+  }
+}
+
+.soical-media-name {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  @include media("<=tablet") {
+    font-weight: 400;
+    font-size: 12px;
+  }
+}
+.blog-social-media-share-wrapper {
+  @include media("<=tablet") {
+    justify-content: center;
+  }
+}

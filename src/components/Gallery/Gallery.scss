@@ -1,0 +1,119 @@
+@import '../../sass/responsive';
+$red-color: #ff0000;
+.gallery-modal-wrapper {
+  .modal-content {
+    background-color: transparent;
+    border: none;
+  }
+}
+.modal-body {
+  padding: 0;
+}
+
+.gallery-modal-wrapper {
+  .modal-header {
+    position: relative;
+    padding: 0;
+    border: none;
+    button {
+      position: absolute;
+      top: 1px;
+      background: #fff;
+      height: 30px;
+      width: 30px;
+      border-radius: 50%;
+      z-index: 3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      right: 0;
+    }
+  }
+}
+
+.single-gallery-wrapper {
+  img {
+    border-radius: 8px;
+    object-fit: cover;
+  }
+}
+
+.gallery-button {
+  margin: 0px 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+  color: gray;
+}
+
+.button-active {
+  position: relative;
+  color: #000;
+  &::after {
+    position: absolute;
+    content: ' ';
+    border-bottom: 2px solid red;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 5px;
+  }
+}
+
+.gallery-wrapper {
+  @include media('<=991px') {
+    display: none;
+  }
+}
+.mobile-gallery-wrapper {
+  display: none;
+  @include media('<=991px') {
+    display: block;
+  }
+  .slick-slide {
+    padding: 0px 5px;
+  }
+}
+.about-page-gallery-container {
+  .overlayBorder-wrapper {
+    @include media('<=991px') {
+      margin-bottom: 2rem !important;
+    }
+  }
+}
+
+.video-gallery-wrapper {
+  @include media('<=991px') {
+    display: none;
+  }
+}
+
+// .react-photo-gallery--gallery {
+//   @include media("<=991px") {
+//     display: none;
+//   }
+// }
+
+.react-photo-gallery--gallery {
+  column-count: 3;
+  column-gap: 10px;
+  @include media('<=tablet') {
+    column-count: 2;
+  }
+  @include media('<=460px') {
+    column-count: 1;
+  }
+  .single-image-wrapper {
+    margin-bottom: 1rem;
+  }
+  div {
+    display: block !important;
+  }
+}
+
+.react-photo-gallery--gallery img {
+  height: auto;
+  max-width: 100% !important;
+  margin-bottom: 10px !important;
+  border-radius: 8px;
+}

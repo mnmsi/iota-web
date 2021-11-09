@@ -1,0 +1,51 @@
+@import "../../sass/responsive";
+.tech-logo-wrapper {
+  height: 50px;
+  width: 50px;
+  margin-right: 20px;
+}
+
+.technology-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  flex-direction: column;
+  .tech-logo-wrapper {
+    padding-bottom: 30px;
+    img {
+      height: auto !important;
+      width: auto !important;
+      display: flex !important;
+      max-width: 90px !important;
+    }
+  }
+}
+
+.tech-name p {
+  font-weight: 600;
+  font-size: 16px;
+  margin-top: 30px;
+}
+
+.technology-category-wrapper {
+  h2 {
+    font-weight: bold;
+    &::first-letter {
+    }
+  }
+}
+
+.home-page-technology-wrapper {
+  .slick-slider {
+    .slick-dots {
+      bottom: 33px;
+      li {
+        margin: 0px;
+        &::before {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}

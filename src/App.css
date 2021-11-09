@@ -1,0 +1,214 @@
+html,
+body,
+div,
+span,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+strong,
+u,
+i,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+tr,
+th,
+td,
+figure,
+figcaption,
+footer,
+header,
+section,
+audio {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  color: #000;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.everythingCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.section-devider {
+  margin-bottom: 3rem;
+}
+
+.text-red {
+  color: red;
+}
+
+.pt-10 {
+  padding-top: 6rem;
+}
+
+.pl-10 {
+  padding-left: 6rem;
+}
+.pr-10 {
+  padding-right: 6rem;
+}
+
+.pb-10 {
+  padding-bottom: 6rem;
+}
+
+.pb-15 {
+  padding-bottom: 10rem;
+}
+.pt-15 {
+  padding-top: 10rem;
+}
+.pr-15 {
+  padding-right: 10rem;
+}
+.pl-15 {
+  padding-left: 10rem;
+}
+
+@media (max-width: 575.98px) {
+  .mb-xs-0 {
+    margin-bottom: 0 !important;
+  }
+
+  .p-xs-0 {
+    padding: 0px !important;
+  }
+  .p-5 {
+    padding: 0px !important;
+  }
+  h2 {
+    font-size: 19px;
+  }
+  .pt-10 {
+    padding-top: 1.5rem;
+  }
+
+  .pl-10 {
+    padding-left: 1.5rem;
+  }
+  .pr-10 {
+    padding-right: 1.5rem;
+  }
+
+  .pb-10 {
+    padding-bottom: 1.5rem;
+  }
+
+  .pb-15 {
+    padding-bottom: 2.5rem;
+  }
+  .pt-15 {
+    padding-top: 2.5rem;
+  }
+  .pr-15 {
+    padding-right: 1rem;
+  }
+  .pl-15 {
+    padding-left: 1rem;
+  }
+}
+.main-components-wrapper {
+  margin-top: 50px;
+}
+@media (max-width: 767.98px) {
+  .p-5 {
+    padding: 0rem !important;
+  }
+  .mb-sm-0 {
+    margin-bottom: 0 !important;
+  }
+  .p-sm-0 {
+    padding: 0px !important;
+  }
+  .p-sm-1 {
+    padding: 1rem !important;
+  }
+  p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .pt-10 {
+    padding-top: 3rem;
+  }
+  h2 {
+    font-size: 20px;
+  }
+
+  .pl-10 {
+    padding-left: 2rem;
+  }
+  .pr-10 {
+    padding-right: 2rem;
+  }
+
+  .pb-10 {
+    padding-bottom: 2rem;
+  }
+
+  .pb-15 {
+    padding-bottom: 3.2rem;
+  }
+  .pt-15 {
+    padding-top: 3.2rem;
+  }
+  .pr-15 {
+    padding-right: 3.2rem;
+  }
+  .pl-15 {
+    padding-left: 5rem;
+  }
+}

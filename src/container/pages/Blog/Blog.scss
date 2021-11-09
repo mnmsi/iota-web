@@ -1,0 +1,27 @@
+.industries-page-wrapper {
+  .card {
+    img {
+      height: 250px;
+      object-fit: cover;
+    }
+  }
+}
+.blog-page-wrapper .single-blog-title h6 {
+  padding-top: 10px;
+  text-overflow: inherit;
+  width: 100%;
+}
+.single-blog .single-block-wrapper a .card img {
+  height: 300px;
+}
+.blog-body-wrapper img {
+  width: 100% !important;
+}
+
+.homePageBlog-data .single-block-wrapper a .card img {
+  height: 120px;
+}
+
+.social-media-icon img {
+  height: 100%;
+}

@@ -1,0 +1,49 @@
+@import "../../sass/responsive";
+.contact-form-modal.modal-body {
+  position: relative;
+  text-align: center;
+  z-index: 2;
+}
+
+.modal-image-wrapper {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 30%;
+  left: 50%;
+  z-index: -1;
+}
+
+.contact-form-modal.modal-body button {
+  border: 0;
+  background: black;
+  padding: 10px 100px;
+  color: #fff;
+  border-radius: 30px;
+}
+
+.contact-form-modal {
+  padding: 50px 0;
+}
+
+.contact-form-modal.modal-body h4 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 30px 0;
+}
+
+.form-modal {
+  .modal-content {
+    border-radius: 1rem;
+    border: 0;
+  }
+}
+
+.contact-form-lunch-from-wrapper {
+  height: 150px;
+  width: 100px;
+}
+
+.contact-form-lunch-from-wrapper img {
+  margin-top: -150px;
+  height: 150px;
+}

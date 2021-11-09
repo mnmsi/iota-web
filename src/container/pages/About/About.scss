@@ -1,0 +1,59 @@
+@import '../../../sass/responsive';
+@mixin overlay {
+  .overlay-border {
+    transform: rotate(0deg);
+  }
+}
+@mixin rotate {
+  .overlay-border {
+    transform: rotate(180deg);
+  }
+}
+.mission-and-vission-wrapper {
+  @include rotate();
+}
+
+.our-mission {
+  @include overlay();
+}
+
+.about-page-management-section {
+  @include overlay();
+}
+
+.about-page-testimonial-wrapper {
+  background: #f0f6ff;
+  padding: 3rem;
+  @include media('<=tablet') {
+    padding: 0.5rem;
+  }
+}
+
+.slick-dots {
+  display: none;
+}
+
+.about-page-gallery-container {
+  @include rotate();
+}
+
+.load-more-button {
+  cursor: pointer;
+  padding: 10px 0;
+  border: 1px solid #ddd;
+  color: #444;
+  font-size: 16px;
+  margin: 10px auto;
+  font-weight: 500;
+}
+
+.video-thumbnail-wrapper img {
+  height: 250px;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.full-screen-video div {
+  width: 100% !important;
+  height: 350px !important;
+}

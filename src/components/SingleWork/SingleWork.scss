@@ -1,0 +1,110 @@
+@import "../../sass/responsive";
+
+.single-work-wrapper {
+  filter: drop-shadow(10px 20px 40px rgba(0, 0, 0, 0.3));
+  background: #fff;
+  padding: 2rem;
+  width: 90%;
+  margin: 0 auto;
+  @include media("<=991px") {
+    padding: 0rem;
+    border-radius: 12px;
+  }
+  .single-slider-control-wrapper {
+    @include media("<=991px") {
+      display: none !important;
+    }
+  }
+}
+.single-work-title-wrapper {
+  h2 {
+    font-size: 25px;
+    @include media("<=991px") {
+      font-size: 14px;
+      font-weight: bolder;
+    }
+  }
+}
+
+.slick-dots li.slick-active button:before {
+  color: #ff003d !important;
+}
+
+.single-work-image-wrapper {
+  height: 500px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include media("<tablet") {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.single-slider-next-control {
+  margin-right: 10px;
+}
+
+.some-of-our-work.container {
+  @include media("<=991px") {
+    padding-left: 0px;
+    padding-right: 0px;
+    overflow: hidden;
+  }
+}
+
+@include media("<=991px") {
+  .home-page-single-work-wrapper {
+    padding: 60px 0px;
+  }
+
+  .single-work-content-content-wrapper {
+    padding: 20px 0;
+  }
+}
+
+@include media("<=991px") {
+  .single-work-content-wrapper .row {
+    margin: 0px !important;
+  }
+
+  .single-work-content-content-wrapper {
+    padding: 75px 5px;
+  }
+  // .single-work-content-wrapper .row > div {
+  //   padding: 0px;
+  // }
+}
+
+.single-work-arrow-icon {
+  color: #ff003d;
+  font-size: 20px;
+}
+
+// .slick-slider .single-work-content-wrapper .row .col-lg-4:nth-child(2n + 1) {
+//   background: green;
+// }
+
+.single-work-content-sub-title {
+  p {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-height: 16px;
+    line-height: 1.5;
+    font-size: 18px;
+    @include media("<=991px") {
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+}
+
+.single-work-arrow-icon a {
+  color: red;
+  font-size: 30px;
+}

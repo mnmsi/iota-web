@@ -1,0 +1,51 @@
+@import "../../sass/responsive";
+@mixin mission-image-block {
+  transform: rotateY(180deg);
+}
+
+.our-mission {
+  .mission-image-block {
+    // @include mission-image-block();
+  }
+}
+.our-mythology {
+  padding: 0px 2rem;
+  @include media("<=tablet") {
+    padding: 0px;
+  }
+}
+.our-vision {
+  padding: 0px 2rem;
+  @include media("<=tablet") {
+    padding: 0px;
+  }
+}
+
+.mission-and-vission-wrapper {
+  .mission-image-block {
+    width: 400px;
+    margin: 20px auto;
+    @include media("<=tablet") {
+      max-width: 250px;
+    }
+
+    @include media(">phone", "<=576") {
+    }
+
+    @include media("<=phone") {
+    }
+
+    @include media("<=991px") {
+      width: 300px;
+    }
+  }
+}
+
+.mission-content p {
+  line-height: 1.5;
+  font-size: 18px;
+  @include media("<=991px") {
+    text-align: center;
+    font-size: 14px !important;
+  }
+}

@@ -1,0 +1,54 @@
+@import "../../../sass/colors";
+@import "../../../sass/classes";
+.career-join-us-form {
+  textarea.form-control {
+    height: 130px;
+  }
+  .form-control {
+    border-radius: 14px;
+    background: $light-gray-color;
+    border: none;
+    color: #000;
+    height: 50px;
+    padding: 10px 20px;
+    &::placeholder {
+      color: #000;
+    }
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+  }
+}
+
+.career-page-file-upload {
+  .upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    @include media("<=991px") {
+      width: 100%;
+    }
+  }
+
+  .btn {
+    color: #000;
+    background-color: white;
+    padding: 8px 20px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    background: $light-gray-color;
+    @include media("<=991px") {
+      width: 100%;
+    }
+  }
+
+  .upload-btn-wrapper input[type="file"] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+  }
+}

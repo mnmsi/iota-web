@@ -1,0 +1,49 @@
+@import "../../sass/responsive";
+
+.single-management-card {
+  margin: 0px 40px;
+  @include media("<=tablet") {
+    margin: 0px;
+  }
+  .slick-slide {
+    margin: 0px 20px;
+  }
+  height: 430px;
+  transition: 0.5s ease-in-out;
+  &:hover {
+    .single-management-details {
+      p {
+        &:nth-child(1) {
+          color: #eb1c24;
+          text-shadow: 0px 3px 12px rgba(0, 0, 0, 0.16);
+        }
+      }
+    }
+  }
+}
+
+.single-management-image-wrapper {
+  height: 300px;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 10px;
+  background: #b3b3b3;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  @include media("<=tablet") {
+    width: 70%;
+  }
+}
+
+.about-page-management-section {
+  .overlay-border {
+    @include media("<=768") {
+      margin-bottom: 1.5rem;
+    }
+  }
+}
+
+.management-wrapper {
+  @include media("<=tablet") {
+    margin-top: 1rem;
+  }
+}

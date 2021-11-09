@@ -1,0 +1,95 @@
+@import "../../sass/responsive";
+@import "../../sass/colors";
+.breadCrumb-content-wrapper {
+  min-height: 450px;
+  @include media("<=tablet") {
+    min-height: 200px;
+  }
+  @include media(">phone", "<=576px") {
+    min-height: 170px;
+  }
+
+  @include media("<=phone") {
+    min-height: 150px;
+  }
+
+  @include media(">tablet", "<desktop") {
+    min-height: 250px;
+  }
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    content: "";
+    background: #000;
+    opacity: 0.9;
+    z-index: -1;
+  }
+  h2 {
+    font-size: 40px;
+    @include media("<=tablet") {
+      font-size: 25px;
+    }
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
+
+// video
+
+.video_bread_crumb_wrapper {
+  position: relative;
+  min-height: 500px;
+  @include media("<=tablet") {
+    min-height: 200px + 50px;
+  }
+  @include media(">phone", "<=576px") {
+    min-height: 170px + 50px;
+  }
+
+  @include media("<=phone") {
+    min-height: 150px + 50px;
+  }
+
+  @include media(">tablet", "<desktop") {
+    min-height: 250px + 50px;
+  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.9);
+  text-align: center;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  h2 {
+    font-size: 40px;
+    @include media("<=tablet") {
+      font-size: 25px;
+    }
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
+
+.video_bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+}

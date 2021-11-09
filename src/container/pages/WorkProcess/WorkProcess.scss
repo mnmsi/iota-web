@@ -1,0 +1,238 @@
+@import '../../../sass/responsive';
+// work process for;
+.work_process_form_wrapper {
+  .upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  .btn {
+    // border: 2px solid gray;
+    color: #666;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: normal;
+    background: #f8f8f8;
+    margin-top: 0px;
+    padding: 14px 1rem;
+    text-align: left;
+    &:hover {
+      font-weight: bold;
+    }
+  }
+  .upload-btn-wrapper input[type='file'] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+  }
+  box-shadow: 0px 0px 20px rgb(0 0 0 / 7%);
+  border-radius: 30px;
+  margin-bottom: 9rem;
+  .work_process_form {
+    // border-left: 0.5px solid #c0c0c0;
+    padding: 2rem;
+    @include media('<=991px') {
+      padding: 0 2rem 2rem 2rem;
+    }
+    input,
+    select,
+    textarea {
+      font-size: 14px;
+      width: 100%;
+      margin-bottom: 1rem;
+      border-radius: 10px;
+      background: #f8f8f8;
+      padding: 14px 1rem;
+      border: none;
+      color: #666;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+  .work-process-checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    input[type='checkbox'] {
+      width: 20px;
+      height: 20px;
+      margin: auto 0;
+      accent-color: #ed1c24;
+    }
+    label {
+      margin-left: 10px;
+      font-size: 16px;
+      @include media('<=tablet') {
+        font-size: 14px;
+      }
+    }
+  }
+  input[type='file'] {
+    background: #fff;
+  }
+  textarea {
+    height: 120px;
+    resize: none;
+  }
+  button {
+    width: 100% !important;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    text-align: center;
+    border-radius: 10px;
+    background: #263238;
+    width: 250px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    @include media('<=tablet') {
+      margin-bottom: 1rem;
+    }
+  }
+  .selected-value {
+    color: #666;
+  }
+}
+
+.work-process-form-content {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+
+  p {
+    line-height: 1.3;
+    font-size: 20px;
+    font-weight: normal;
+    @include media('<=991px') {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    h2 {
+      color: #231f20;
+      font-size: 40px;
+      font-weight: bold;
+      @include media('<=991px') {
+        font-size: 35px;
+        text-align: center;
+      }
+      @include media('<=575px') {
+        font-size: 25px;
+      }
+    }
+    .text-red {
+      margin-right: 5px;
+    }
+    .ConsultantText {
+      font-size: 30px;
+      font-weight: bold;
+      margin-top: 1.5rem;
+      @include media('<=991px') {
+        font-size: 25px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+// form-social-button-wrapper
+.form-social-button-wrapper {
+  margin-top: 2rem;
+  .single-social-flow-icon {
+    a {
+      img {
+        height: 70px;
+        width: 70px;
+        margin-right: 20px;
+        // border-radius: 50%;
+        @include media('<=tablet') {
+          height: 50px;
+          width: 50px;
+          // border-radius: 50%;
+          // object-fit: cover;
+        }
+      }
+    }
+  }
+}
+
+// react tel input
+
+.formSubmitBtn {
+  &:disabled {
+    background: #666;
+  }
+}
+
+// input search
+
+.react-tel-input .country-list .search-emoji {
+  display: none;
+}
+.react-tel-input .country-list .search-box {
+  font-size: 14px;
+  width: calc(100% - 1rem) !important;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  background: #f8f8f8;
+  padding: 14px 1rem;
+  border: none;
+  color: #666;
+}
+.feedback {
+  font-size: 14px;
+  margin-bottom: 1rem;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+// form card
+
+.workprocess-page-form-data {
+  .form-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    @include media('<=991px') {
+      padding-top: 1rem;
+    }
+  }
+  .work-process-page-content {
+    @include media('<=991px') {
+      margin-bottom: 1rem;
+    }
+    h2 {
+      font-size: 40px;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      @include media('<=991px') {
+        font-size: 22px;
+        text-align: center;
+      }
+    }
+  }
+  p {
+    font-size: 20px;
+    line-height: 1.5;
+    @include media('<=991px') {
+      font-size: 14px;
+      text-align: center;
+    }
+  }
+}

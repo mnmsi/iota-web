@@ -1,0 +1,52 @@
+.single-our-work-content-heading h4 {
+  font-weight: bold;
+  font-size: 20px;
+  width: 100%;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+.single-our-work-content p {
+  display: -webkit-box;
+  -webkit-line-clamp: 8;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: normal;
+}
+.single-our-work-wrapper {
+  height: 250px;
+  margin-bottom: 1.5rem;
+  width: 100%;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.16);
+  padding-right: 15px;
+}
+
+.single-our-work-image-wrapper {
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  cursor: auto;
+}
+.single-our-work-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.single-our-work-wrapper ul.slick-dots {
+  margin-bottom: 54px;
+}
+
+.single-slider-next-control {
+  margin-right: 10px;
+}

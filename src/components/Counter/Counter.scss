@@ -1,0 +1,224 @@
+@import '../../sass/responsive';
+@import '../../sass/colors';
+
+// .single-counter-wrapper {
+//   height: 200px;
+//   width: 200px;
+//   border-radius: 50%;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   flex-direction: column;
+//   background: #fff;
+//   position: absolute;
+//   top: -100px;
+//   z-index: 9;
+//   left: 35px;
+//   @include media("<=991px")
+//   {
+//     left: 15px;
+//     height: 100px;
+//     width: 100px;
+//   }
+//   @include media(">phone","<=tablet")
+//   {
+//     height: 70px;
+//     width: 70px;
+//     top: -80px;
+//     left: 8px;
+//   }
+
+//   @include media("<=phone")
+//   {
+//     height: 50px;
+//     width: 50px;
+//     top: -80px;
+//     left: 5px;
+//     top: -70px;
+//   }
+// }
+
+// .counter-round-image-wrapper {
+//   height: 100%;
+//   width: 100%;
+//   top: -44px;
+//   @include media("<=991px")
+//   {
+
+//   }
+// }
+
+// .counter-title {
+//   p{
+//   font-weight: bold;
+//   margin-bottom: -30px;
+//   font-size: 20px;
+//   @include media("<=991px")
+//   {
+//     font-size: 13px;
+//     margin-top: 10;
+//     margin-bottom: 0px;
+//   }
+//   @include media(">phone","<=tablet")
+//   {
+//     font-size: 8px;
+//   }
+
+//   @include media("<=phone")
+//   {
+//     font-size: 8px;
+//   }
+//   }
+// }
+
+// .counter-content {
+//   h4 span {
+//     color: red;
+//   }
+// }
+
+// .counter-round-image-wrapper {
+//   height: 100%;
+//   width: 100%;
+//   top: -44px;
+//   @include media ("<=991px")
+//   {
+//    top: -20px;
+//   }
+
+//   @include media("<=tablet")
+//   {
+//     top: -15px;
+//   }
+
+// }
+
+// .counter-section-counter {
+//   height: 150px;
+//   width: 150px;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   flex-direction: column;
+//   @include media ("<=991px")
+//   {
+//     height: 70px;
+//     width: 70px;
+//   }
+//   @include media("<=tablet")
+//   {
+//     height: 50px;
+//     width: 50px;
+//   }
+//   @include media("<=phone")
+//   {
+//     height: 50px;
+//     width: 50px;
+//   }
+// }
+
+// .counter-content {
+//   margin-top: -55px;
+//   width: 100px;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
+//   @include media("<=991px")
+//     {
+
+//       margin-top: 0px;
+//     }
+//   h4 {
+//     color: red;
+//     font-weight: 700;
+//     font-size: 25px;
+//     @include media("<=991px")
+//     {
+//       font-size: 14px;
+//       margin-top: 0px;
+//     }
+//   }
+// }
+
+.counter-section-wrapper {
+  background: url('../../assets/img/breadCrumb/breadCrumb.png');
+  padding: 90px 15px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 0.5s;
+  background-color: #000;
+  position: relative;
+  @include media('<=991px') {
+    font-size: 40px 10px;
+  }
+  z-index: 2;
+  &::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: '';
+    background: #000;
+    opacity: 0.9;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.top-counter-title {
+  h5 {
+    font-size: 32px;
+    color: #fff;
+    text-transform: uppercase;
+    @include media('<=991px') {
+      font-size: 15px;
+      margin-bottom: 2px;
+    }
+  }
+}
+.count-section-heading {
+  margin-bottom: 5rem;
+  @include media('<=991px') {
+    margin-bottom: 2rem;
+  }
+  h4 {
+    font-size: 34px;
+    color: #fff;
+    margin-top: 30px;
+    font-weight: normal;
+    @include media('<=991px') {
+      font-size: 20px;
+    }
+    strong {
+      color: #fff;
+      font-weight: 800;
+      margin: 0px 10px;
+    }
+  }
+}
+
+.count-number {
+  h2 {
+    font-size: 60px;
+    font-weight: bold;
+    @include media('<=991px') {
+      font-size: 20px;
+    }
+    span {
+      color: $red;
+    }
+  }
+}
+
+.count-text {
+  p {
+    color: rgb(255 255 255 / 68%);
+    font-size: 22px;
+    text-transform: uppercase;
+    @include media('<=991px') {
+      font-size: 15px;
+    }
+  }
+}

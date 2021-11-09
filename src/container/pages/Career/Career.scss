@@ -1,0 +1,7 @@
+@import "../../../sass/responsive";
+
+.career-form-button-wrapper.i-button {
+  @include media("<=991px") {
+    width: 100%;
+  }
+}

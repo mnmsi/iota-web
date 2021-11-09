@@ -1,0 +1,48 @@
+@import "../../sass/responsive";
+.home-page-industries-wrapper {
+  padding: 3rem;
+  background: #f0f6ff;
+}
+
+.industriesComponents-wrapper {
+  .logo {
+    width: 70px;
+    height: 70px;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      height: 50px !important;
+      width: 50px !important;
+      object-fit: contain;
+      transition: 0.3s;
+    }
+  }
+}
+
+.industriesComponents-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.single-i-item {
+  margin-bottom: 2rem;
+  &:hover {
+    .logo {
+      img {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+.industriesComponents-wrapper .title {
+  margin: 15px 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #231f20;
+}

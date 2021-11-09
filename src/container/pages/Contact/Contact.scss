@@ -1,0 +1,63 @@
+@import '../../../sass/responsive';
+.contact-form-lunch-from-wrapper {
+  width: 100px;
+  height: 0;
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  transform: rotate(360deg);
+  bottom: 70px;
+  @include media('<=991px') {
+    display: none;
+  }
+}
+
+.contact-form {
+  width: 55%;
+  @include media('<=tablet') {
+    width: 100%;
+  }
+}
+
+.form_contact_image_wrapper {
+  // height: 100px;
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  a {
+    di img {
+      margin-right: 30px;
+    }
+  }
+}
+
+.form-icon .single-social-flow-icon {
+  height: 70px;
+  width: 70px;
+  margin-top: 2rem;
+  margin-right: 20px;
+  &:last-child {
+    margin-right: 0px;
+  }
+}
+
+.contact-page-wrapper {
+  .work_process_form_wrapper {
+    // box-shadow: none;
+    margin-bottom: 0;
+    position: relative;
+  }
+  @include media('<=991px') {
+    [data-aos-delay] {
+      transition-delay: 0 !important;
+    }
+  }
+  .form-component-title {
+    h4 {
+      @include media('<=991px') {
+        margin-bottom: 0px;
+      }
+    }
+  }
+}

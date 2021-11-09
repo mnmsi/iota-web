@@ -1,0 +1,66 @@
+@import "../../sass/responsive";
+.hero-section-title {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h2 {
+    color: #000;
+    text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    font-size: 40px;
+    font-weight: bold;
+    @include media("<=991px") {
+      margin-top: 50px;
+    }
+    @include media("<=tablet") {
+      text-align: center;
+      font-size: 30px;
+    }
+    @include media("<=phone") {
+      text-align: center;
+      font-size: 20px;
+    }
+    @include media(">tablet", "<=991px") {
+      text-align: center;
+      font-size: 35px;
+    }
+  }
+}
+
+.hero-section-wrapper {
+  height: 100vh;
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include media("<=tablet") {
+    height: 100vh;
+  }
+  @include media("<991px") {
+    height: auto;
+    margin-top: 50px;
+  }
+}
+
+.hero-section-image-block {
+  @include media("<=tablet") {
+  }
+}
+.hero-section-image-block {
+  @include media("<991px") {
+    margin: 70px auto 0 auto;
+  }
+  @include media("<=tablet") {
+    margin: 50px auto 0 auto;
+  }
+  @include media("<=phone") {
+    margin: 30px auto 0 auto;
+  }
+}
+
+@include media(">991px")
+{
+  .col-lg-5 .v2-single-work-main-content-wrapper {
+    background-size: cover;
+  }
+}

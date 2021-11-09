@@ -1,0 +1,63 @@
+@import "../../sass/responsive";
+.v2-single-work-main-content-wrapper {
+  height: 350px;
+  @include media("<=phone") {
+    height: 200px;
+  }
+  width: 100%;
+  background-size: cover;
+  @include media("<=tablet") {
+    background-size: cover;
+  }
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 0px 10px 20px rgb(0 0 0 / 16%);
+  border-radius: 20px;
+  z-index: 2;
+  transition: 0.1s;
+}
+
+.v2-work-content {
+  width: 74%;
+  @include media("<tablet") {
+    width: 100%;
+    font-size: 10px;
+  }
+  justify-content: space-around;
+  position: absolute;
+  bottom: 0;
+  border-radius: 0px 20px;
+  height: 61px;
+  background: #231f20;
+  filter: drop-shadow(-4px -4px 12px rgba(0, 0, 0, 0.16));
+  visibility: hidden;
+  align-items: center;
+
+  div {
+    color: #fff;
+    font-weight: bold;
+  }
+}
+
+.v2-single-work-wrapper {
+  margin-bottom: 20px;
+  &:hover {
+    .v2-work-content {
+      visibility: visible;
+      bottom: 0px;
+      z-index: 3;
+    }
+    .v2-single-work-main-content-wrapper::after {
+      position: absolute;
+      background: #000;
+      content: "";
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      opacity: 0.3;
+      border-radius: 20px;
+      z-index: -1;
+    }
+  }
+}

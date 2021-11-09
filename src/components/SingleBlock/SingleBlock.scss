@@ -1,0 +1,42 @@
+.single-blog-title h6 {
+  font-size: 15px;
+  font-weight: normal;
+  width: 135px;
+  // text-overflow: ellipsis;
+  // white-space: nowrap;
+  // overflow: hidden;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.single-block-wrapper {
+  padding: 8px;
+  .single-blog-date p {
+    font-size: 12px;
+  }
+  transition: 0.3s;
+  .card {
+    border: none;
+    background: none;
+  }
+  .card-body {
+    padding: 0px 10px;
+  }
+  &:hover {
+    background: #231f20;
+    padding: 8px;
+    .single-blog-title h6 {
+      color: #fff;
+    }
+    .single-blog-date p {
+      color: #fff;
+    }
+    .blog-anchor-symbol svg {
+      color: #fff;
+    }
+  }
+}
+
+.noFlow {
+  pointer-events: none;
+}
