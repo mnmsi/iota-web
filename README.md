@@ -6,7 +6,7 @@ npm install
 
 npm run server
 
-It will open at http://localhost:3000
+It will open at http://localhost:8081
 
 Note: if you dont have react install u have to install react first
 

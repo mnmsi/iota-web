@@ -3,7 +3,7 @@ const path = require("path")
 const fs = require("fs")
 const app = express()
 const axios = require("axios")
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 8081
 const indexPath = path.resolve(__dirname, "..", "build", "index.html")
 
 // get blog data
